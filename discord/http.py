@@ -180,7 +180,7 @@ class HTTPClient:
         self.proxy_auth: Optional[aiohttp.BasicAuth] = proxy_auth
         self.use_clock: bool = not unsync_clock
 
-        user_agent = 'DiscordBot (https://github.com/Rapptz/discord.py {0}) Python/{1[0]}.{1[1]} aiohttp/{2}'
+        user_agent = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/5350 (KHTML, like Gecko) Chrome/39.0.881.0 Mobile Safari/5350'
         self.user_agent: str = user_agent.format(__version__, sys.version_info, aiohttp.__version__)
 
     def recreate(self) -> None:
